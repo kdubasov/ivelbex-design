@@ -1,0 +1,212 @@
+.Preview{
+    width: 100%;
+    padding: 1em 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/*left block*/
+.Preview .left{
+    width: 400px;
+}
+
+.Preview .left h1{
+    margin-bottom: .5em;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 120%;
+    color: #E4E5EA;
+
+    display: flex;
+    flex-direction: column;
+}
+.Preview .left h1 span{
+    font-weight: 900;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.Preview .left h5{
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 300;
+    color: #E4E5EA;
+}
+
+/*right block*/
+.Preview .right{
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.Preview .right h5{
+    margin-bottom: 2em;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: right;
+}
+.Preview .right h5 span{
+    margin: 0 .4em;
+    font-weight: 700;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FD1D1D 121.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+/*blocks*/
+.Preview .right .blocks-container{
+    width: 100%;
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Preview .right .blocks-container .block{
+    width: calc(50% - 1em);
+    margin-bottom: 2em;
+    text-align: right;
+}
+.Preview .right .blocks-container .block h4,
+.Preview .right .blocks-container .block p{
+    color: #E4E5EA;
+    line-height: 120%;
+}
+.Preview .right .blocks-container .block h4{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    font-size: 22px;
+}
+.Preview .right .blocks-container .block h4 .line{
+    display: none;
+    width: 12px;
+    height: 2px;
+    margin-right: .5em;
+    background: linear-gradient(92deg, #FCB045 27.14%, #FD1D1D 121.36%);
+}
+.Preview .right .blocks-container .block p{
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 18px;
+    opacity: .85;
+}
+
+/*button*/
+.Preview .right button{
+    padding: 1.25em 2.5em;
+    background: #4077F3;
+    border: none;
+    font-weight: 300;
+    transition: .25s;
+}
+.Preview .right button:hover{
+    border-radius: 3em;
+}
+
+/*media*/
+@media (max-width: 1200px) {
+    .Preview .left h1{
+        font-size: 48px;
+    }
+    .Preview .left h5,
+    .Preview .right .blocks-container .block h4{
+        font-size: 19px;
+    }
+    .Preview .right .blocks-container .block p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) {
+    .Preview{
+        flex-direction: column;
+    }
+
+    /*left*/
+    .Preview .left{
+        width: 100%;
+        margin-bottom: 3em;
+    }
+    .Preview .left h1{
+        margin-bottom: .15em;
+    }
+
+    /*right*/
+    .Preview .right{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .Preview .right h5{
+        text-align: left;
+    }
+    .Preview .right .blocks-container .block{
+        width: calc(50% - 1em);
+        margin-bottom: 2em;
+        text-align: left;
+    }
+    .Preview .right .blocks-container{
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 791px) {
+    .Preview .right h5{
+        font-size: 18px;
+    }
+    .Preview .right .blocks-container .block h4{
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 550px) {
+    .Preview{
+        padding: 2.5em 10px 2em;
+    }
+    .Preview .left{
+        margin-bottom: 2em;
+    }
+    .Preview .left h1{
+        font-size: 42px;
+    }
+    .Preview .right .blocks-container .block p{
+        display: none;
+    }
+    .Preview .right .blocks-container .block h4 .line{
+        display: block;
+    }
+    .Preview .right h5{
+        margin-bottom: 1em;
+    }
+    .Preview .right .blocks-container .block{
+        margin-bottom: .15em;
+    }
+    .Preview .right .blocks-container .block h4{
+        font-weight: 300;
+    }
+    .Preview .right button{
+        display: none;
+    }
+}
+
+@media (max-width: 385px) {
+    .Preview .left h1{
+        font-size: 36px;
+    }
+    .Preview .left h5{
+        font-size: 18px;
+    }
+    .Preview .right .blocks-container .block h4{
+
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,136 @@
+.NavbarTop{
+    width: 100%;
+    padding: 4em 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*left container*/
+.NavbarTop .left{
+    display: flex;
+}
+
+/*logo*/
+.NavbarTop .left .logo{
+    width: 180px;
+    margin-top: -3px;
+}
+.NavbarTop .left .logo img{
+    width: 100%;
+    margin-bottom: .5em;
+}
+.NavbarTop .left .logo p.small{
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 120%;
+
+    color: #E4E5EA;
+}
+
+/*nav*/
+.NavbarTop nav{
+    margin-left: 75px;
+}
+.NavbarTop nav a{
+    margin-right: 3em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E4E5EA;
+    text-decoration: none;
+    transition: .25s;
+}
+.NavbarTop nav a:last-child{
+    margin-right: 0;
+}
+.NavbarTop nav a:hover{
+    opacity: .75;
+}
+
+/*contacts*/
+.NavbarTop .contacts{
+    margin-top: 3px;
+    display: flex;
+    align-items: center;
+}
+.NavbarTop .contacts h6{
+    margin: 3px 2em 0 0;
+}
+.NavbarTop .contacts img{
+    margin: 0 1em;
+}
+
+/*media*/
+@media (max-width: 1400px) {
+    .NavbarTop nav a{
+        margin-right: 2em;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .NavbarTop .contacts{
+        display: none;
+    }
+    .NavbarTop .left{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 991px) {
+    .NavbarTop .left .logo{
+        width: 150px;
+        margin-top: 2px;
+    }
+    .NavbarTop .left .logo p.small{
+        font-size: 10px;
+    }
+    .NavbarTop nav{
+        margin-left: 0;
+    }
+    .NavbarTop nav a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .NavbarTop nav a:last-child{
+        display: none;
+    }
+    .NavbarTop .left .logo{
+        width: 120px;
+        margin-top: 4px;
+    }
+    .NavbarTop .left .logo p.small{
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .NavbarTop{
+        padding: 1.25em 10px;
+        background: #1E1E1E;
+    }
+    .NavbarTop .logo{
+        display: none;
+    }
+    .NavbarTop .left{
+        justify-content: center;
+    }
+    .NavbarTop .left nav a:nth-child(4){
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .NavbarTop .left nav a{
+        font-size: 14px;
+        margin-right: 1.25em;
+    }
+}

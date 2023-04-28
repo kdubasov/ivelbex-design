@@ -1,0 +1,159 @@
+.FooterBottom{
+    width: 100%;
+    margin-top: 5em;
+    padding: 2em 0;
+}
+
+/*top block*/
+.FooterBottom .top-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterBottom h6.opac{
+    color: #656566;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.FooterBottom nav{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;
+}
+
+.FooterBottom nav a{
+    margin-bottom: .65em;
+    text-decoration: none;
+    color: #E4E5EA;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+/*left block*/
+.FooterBottom .top-block .left{
+    display: flex;
+}
+
+.FooterBottom .top-block .left .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.FooterBottom .top-block .left .menu h6{
+    width: 100%;
+}
+
+.FooterBottom .top-block .left .about{
+    margin-right: 4em;
+}
+
+/*right block*/
+.FooterBottom .top-block .right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.FooterBottom .top-block .right a,
+.FooterBottom .top-block .right p{
+    text-decoration: none;
+    color: #E4E5EA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+}
+
+.FooterBottom .top-block .right .images{
+    margin: 1em 0;
+}
+.FooterBottom .top-block .right .images img{
+    margin-left: 1em;
+}
+
+/*bottom block*/
+.FooterBottom .bottom-block{
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+.FooterBottom .bottom-block .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.FooterBottom .bottom-block .content p,
+.FooterBottom .bottom-block .content a{
+    margin: 0;
+    color: #E4E5EA;
+    font-weight: 300;
+    font-size: 14px;
+    opacity: .9;
+}
+.FooterBottom .bottom-block .content a{
+    text-decoration: underline;
+}
+
+/*media*/
+@media (max-width: 1200px) {
+    .FooterBottom .top-block .left{
+        flex-direction: column;
+    }
+    .FooterBottom nav a{
+        margin-bottom: .5em;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .FooterBottom nav{
+        margin-bottom: 1em;
+    }
+    .FooterBottom .top-block .left h6.opac{
+        margin-bottom: .5em;
+    }
+    .FooterBottom .bottom-block{
+        margin-top: .5em;
+    }
+    .FooterBottom .top-block .right a,
+    .FooterBottom .top-block .right p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 769px) {
+    .FooterBottom .top-block{
+        flex-direction: column;
+    }
+    .FooterBottom .top-block .left .about {
+        margin-right: 0;
+    }
+    .FooterBottom .top-block .right{
+        align-items: flex-start;
+    }
+    .FooterBottom .top-block .right h6{
+        margin-bottom: .5em;
+    }
+    .FooterBottom .top-block .right .images img{
+        margin: 0 1.25em 0 0;
+    }
+    .FooterBottom .bottom-block{
+        margin-top: 2em;
+    }
+    .FooterBottom .bottom-block,
+    .FooterBottom .bottom-block .content{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 550px) {
+    .FooterBottom{
+        background: #1E1E1E;
+        margin-top: 0;
+        padding: 1em 10px;
+    }
+}
